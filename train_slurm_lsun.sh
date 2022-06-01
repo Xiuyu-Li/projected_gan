@@ -11,4 +11,4 @@
 #SBATCH --partition=cuvl --gres=gpu:2080ti:8 -w goodfellow
 #SBATCH --get-user-env
 
-python train.py --outdir=./training-runs/ --cfg=fastgan --data=./data/expressionism_lmdb.zip --gpus=8 --batch=64 --mirror=1 --snap=50 --batch-gpu=8 --kimg=10000
+python train.py --outdir=./training-runs/ --cfg=fastgan --data=./data/impressionism_lmdb.zip --gpus=8 --batch=64 --mirror=1 --snap=50 --batch-gpu=8 --kimg=10000
